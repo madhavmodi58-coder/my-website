@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexPe Plans</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: -apple-system, sans-serif;
+  background: #f5f5f7;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.header h1 {
+  font-size: 42px;
+}
+
+/* GRID */
+.plans {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+  padding: 40px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE */
+.card img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+/* TITLE */
+.card h2 {
+  font-size: 24px;
+}
+
+/* PRICE */
+.price {
+  font-size: 28px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* LIST */
+ul {
+  text-align: left;
+  margin-top: 15px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+  .plans {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>NexPe</h2>
+  <div>
+    <a href="index.html">Home</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<section class="header">
+  <h1>Choose Your Plan</h1>
+  <p>Flexible plans for every user</p>
+</section>
+
+<!-- PLANS -->
+<section class="plans">
+
+  <!-- SMART VALUE -->
+  <div class="card">
+   <h2>Smart Value Plan</h2>
+    <div class="price">$45/month</div>
+
+    <ul>
+      <li>Latest iPhone (16 / 17)</li>
+      <li>No upfront cost</li>
+      <li>Upgrade after 12 months</li>
+      <li>NBFC-backed financing</li>
+      <li>Basic protection included</li>
+    </ul>
+
+    <button class="btn">Select Plan</button>
+  </div>
+
+  <!-- PRO TECH -->
+  <div class="card">
+    <h2>Pro Tech Plan</h2>
+    <div class="price">$60/month</div>
+
+    <ul>
+      <li>iPhone Pro models</li>
+      <li>Priority upgrades</li>
+      <li>Full protection (damage + theft)</li>
+      <li>Faster upgrade cycle</li>
+      <li>Premium support</li>
+    </ul>
+
+    <button class="btn">Select Plan</button>
+  </div>
+
+</section>
+
+</body>
+</html>
